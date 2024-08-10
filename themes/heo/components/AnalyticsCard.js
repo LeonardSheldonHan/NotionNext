@@ -56,7 +56,7 @@ export function AnalyticsCard(props) {
                 </svg>
                 <span className='text-pink-700'>和LZX相恋已经:</span>
             </div>
-            <div className='text-pink-700 text-2xl'>{loveDays} 天</div>
+            <div className='text-pink-700 text-2xl'>{lovedays} 天</div>
         </div>
     </div>
 </div>
