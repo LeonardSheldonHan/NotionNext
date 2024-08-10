@@ -19,29 +19,34 @@ export function AnalyticsCard(props) {
 
   const { postCount } = props
   return <>
-       <div className='text-md flex flex-col space-y-1 justify-center px-3'>
+      <div className='text-md flex flex-col space-y-4 justify-center px-5 py-4 bg-white rounded-lg shadow-lg'>
     <div className='inline'>
-        <div className='flex justify-between'>
-            <div>文章数:</div>
-            <div>{postCount}</div>
+        <div className='flex justify-between items-center text-gray-700'>
+            <div className='font-medium'>文章数:</div>
+            <div className='font-semibold text-lg'>{postCount}</div>
         </div>
     </div>
     <div className='inline'>
-        <div className='flex justify-between'>
-            <div>建站天数:</div>
-            <div>{diffDays} 天</div>
+        <div className='flex justify-between items-center text-gray-700'>
+            <div className='font-medium'>建站天数:</div>
+            <div className='font-semibold text-lg'>{diffDays} 天</div>
+        </div>
+    </div>
+    <div className='hidden busuanzi_container_site_uv'>
+        <div className='flex justify-between items-center text-gray-700'>
+            <div className='font-medium'>访客数:</div>
+            <div className='busuanzi_value_site_uv font-semibold text-lg' />
         </div>
     </div>
     <div className='inline'>
-        <div className='flex justify-between text-pink-600 font-semibold items-center'>
+        <div className='flex justify-between items-center text-pink-600 font-bold text-xl'>
             <div className='flex items-center'>
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
-                    fill="none" 
+                    fill="currentColor" 
                     viewBox="0 0 24 24" 
-                    strokeWidth={2} 
-                    stroke="currentColor" 
-                    className="w-5 h-5 mr-1 text-red-500"
+                    strokeWidth={0} 
+                    className="w-8 h-8 mr-2 text-red-500 animate-pulse"
                 >
                     <path 
                         strokeLinecap="round" 
@@ -49,17 +54,12 @@ export function AnalyticsCard(props) {
                         d="M3.172 5.172a4 4 0 015.656 0L12 8.343l3.172-3.171a4 4 0 115.656 5.656l-8.486 8.486a.5.5 0 01-.707 0l-8.486-8.486a4 4 0 010-5.656z" 
                     />
                 </svg>
-                和LZX相恋已经:
+                <span className='text-pink-700'>和LZX相恋已经:</span>
             </div>
-            <div>{lovedays} 天</div>
-        </div>
-    </div>
-    <div className='hidden busuanzi_container_site_uv'>
-        <div className='flex justify-between'>
-            <div>访客数:</div>
-            <div className='busuanzi_value_site_uv' />
+            <div className='text-pink-700 text-2xl'>{loveDays} 天</div>
         </div>
     </div>
 </div>
+
         </>
 }
