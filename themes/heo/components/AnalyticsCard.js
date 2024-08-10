@@ -51,7 +51,7 @@ export function AnalyticsCard(props) {
                 </svg>
                 和LZX相恋已经:
             </div>
-            <div>{loveDays} 天</div>
+            <div>{lovedays} 天</div>
         </div>
     </div>
     <div className='hidden busuanzi_container_site_uv'>
