@@ -23,8 +23,8 @@ const CONFIG = {
   HEO_HERO_TITLE_LINK: 'https://www.larryivanhan.blog/en/tag/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B',
 
   // 英雄区显示三个置顶分类
-  HEO_HERO_CATEGORY_1: { title: '必看精选', url: '/tag/必看精选' },
-  HEO_HERO_CATEGORY_2: { title: '热门文章', url: '/tag/热门文章' },
+  HEO_HERO_CATEGORY_1: { title: '关于作者', url: '/about' },
+  HEO_HERO_CATEGORY_2: { title: '必看精选', url: '/tag/必看精选' },
   HEO_HERO_CATEGORY_3: { title: '实用教程', url: '/tag/实用教程' },
 
   // 英雄区右侧推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
